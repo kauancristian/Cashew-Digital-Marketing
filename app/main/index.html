@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/cashew-logo-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Cashew - Digital Marketing</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #h1-sec1, p{
+            font-family: "Montserrat", serif;
+        }
+
+        button{
+            font-family: "Poppins", serif;
+        }
+
+        
+        @keyframes opacity {
+            0%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+        #p-sec1, #btns{
+            animation: opacity 1.2s ease-in-out;
+        }
+
+        @keyframes video {
+            0%{
+                opacity: 0;
+                transform: translateY(140px);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        #div-video{
+            animation: video 1.4s ease-in-out;
+        }
+       
+        p.planos{
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F6FE]">
+    <div>
+        <header>
+            <img class="w-44 h-32 md:w-56 md:h-40 translate-x-[-25px] lg:translate-x-0" src="assets/cashew-logo-removebg-preview.png" alt="">
+        </header>
+
+        <div class="flex flex-col justify-center items-center pt-20 lg:pt-0 lg:transform lg:translate-y-[-10px]">
+            <div class="lg:flex items-center lg:space-x-1">
+                <div class="flex lg:flex lg:flex space-x-2 justify-center lg:justify-start">
+                    <h1 id="h1-sec1" class="text-4xl lg:text-8xl font-semibold text-[#001E39]">Exercise</h1>
+                    <div class="space-y-3 flex flex-col items-center mt-2.5 lg:mt-10">
+                        <span class="w-1.5 h-1.5 lg:w-3 lg:h-3 block bg-[#9C14E8] rounded-full"></span>
+                        <span class="w-1.5 h-1.5 lg:w-3 lg:h-3 block bg-[#9C14E8] rounded-full"></span>
+                    </div>
+                </div>
+                <div class="w-[240px] mt-3">
+                    <p class="text-[#1A344D] font-base lg:text-2xl font-semibold lg:translate-x-4 text-center lg:text-start">Performance além de search e social</p>
+                </div>
+            </div>
+
+            <p id="p-sec1" class="lg:w-[500px] px-10 lg:px-0 text-center pt-12">Acelere seu crescimento com tecnologia, desempenho e resultados comprovados. </p>
+
+            <div id="btns" class="flex pt-10 space-x-4">
+                <button class="bg-[#0056F0] py-2 px-7 rounded-full text-base text-white hover:bg-[#002852] transition ease-in-out duration-300">Criar Conta</button>
+                <button class="border border-[#002852] py-3 px-8 rounded-full text-base hover:bg-[#002852] hover:text-white transition ease-in-out duration-300">Fale com Vendas</button>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div id="div-video" class="flex justify-center pt-20 rounded-lg px-5 lg:px-0 overflow-hidden">
+            <video class="rounded-lg" autoplay loop muted playsinline>
+                <source src="https://discover.taboola.com/wp-content/uploads/2025/02/vdo-Realize_Ads-For_HP-x1-v01.webm">
+            </video>        
+        </div>
+
+        <p id="p-planos" class="text-center pt-20 font-semibold text-2xl md:text-2xl text-[#002852]">Acesse nossos Publishers Personalizados</p>
+
+        <div id="imgs" class="relative flex justify-center pt-10 w-[93%] mx-auto overflow-hidden h-44 pb-5">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/images-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/github-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/linkedin-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/metropoles-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/chatgpt-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/netlify-logo-removebg-preview.png" alt="">
+            <img class="imagem w-40 h-40 lg:w-44 lg:h-44 object-contain absolute opacity-0" src="assets/publishiers/spotify-1280x720_rjk6-removebg-preview.png" alt="">
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let imagens = document.querySelectorAll(".imagem");
+                let index = 0;
+                let tempoTransicao = 1000; // Tempo da transição em ms (1s)
+                let intervalo = 2000; // Tempo entre trocas de imagem
+        
+                function trocarImagem() {
+                    let imagemAtual = imagens[index];
+                    let proximaImagem = imagens[(index + 1) % imagens.length];
+        
+                    // Suavemente torna a imagem atual transparente
+                    imagemAtual.style.opacity = "0";
+        
+                    // Suavemente torna a próxima imagem visível
+                    setTimeout(() => {
+                        imagemAtual.style.zIndex = "0"; // Coloca a imagem antiga no fundo
+                        proximaImagem.style.zIndex = "1"; // Traz a nova imagem para frente
+                        proximaImagem.style.opacity = "1";
+                    }, tempoTransicao);
+        
+                    // Atualiza o índice para a próxima imagem
+                    index = (index + 1) % imagens.length;
+                }
+        
+                // Inicia a primeira imagem visível
+                imagens[0].style.opacity = "1";
+                imagens[0].style.zIndex = "1";
+        
+                // Alterna as imagens a cada intervalo definido
+                setInterval(trocarImagem, intervalo);
+            });
+        </script>
+        
+        <style>
+            .imagem {
+                transition: opacity 1s ease-in-out;
+            }
+        </style>
+        
+    </div>
+    <div class="bg-[#FFFFFF] mt-12">
+        <div class="pt-20 grid lg:grid-cols-2 pb-20">
+            <div id="p-sec2" class="flex flex-col justify-center items-center">
+                <div class="flex justify-center lg:justify-start items-center lg:space-x-2 lg:translate-x-[-50px]">
+                    <p class="text-4xl lg:text-6xl font-semibold text-[#001D37]"><span class="text-[#9C14E8] text-4xl">Why</span> <br>Exercise</p>
+                    <div class="space-y-3 flex flex-col mt-[48px] lg:mt-[70px]">
+                        <span class="w-1.5 h-1.5 lg:w-2 lg:h-2 block bg-[#9C14E8] rounded-full"></span>
+                        <span class="w-1.5 h-1.5 lg:w-2 lg:h-2 block bg-[#9C14E8] rounded-full"></span>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-start pt-8 space-x-4 lg:px-0 lg:translate-x-[-25px]">
+                    <button id="btn1-sec2" class="bg-[#0056F0] py-2 px-7 rounded-full text-base text-white hover:bg-[#002852] transition ease-in-out duration-300">Criar Conta</button>
+                    <button  class="border border-[#002852] py-3 px-8 rounded-full text-base hover:bg-[#002852] hover:text-white transition ease-in-out duration-300">Fale com Vendas</button>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start justify-center space-y-16 lg:space-y-12 px-5 lg:px-0 pt-16">
+                <div id="opt1" class="lg:w-[500px]">
+                    <i class="bi bi-phone bg-[#0056F0] text-white rounded-md py-2 px-3 text-2xl shadow-xl"></i>
+                    <p class="leading-10 pt-2 font-semibold">Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint ipsum qui eligendi id! Maiores, iste! Doloribus numquam quasi ab.</p>
+                </div>
+
+                <div id="opt2" class="lg:w-[500px]">
+                    <i class="bi bi-reception-3 bg-[#0056F0] text-white rounded-md py-2 px-3 text-2xl shadow-xl"></i>
+                    <p class="leading-10 pt-2 font-semibold">Lorem ipsum dolor sit amet</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint ipsum qui eligendi id! Maiores, iste! Doloribus numquam quasi ab.</p>
+                </div>
+
+                <div id="opt3" class="lg:w-[500px]">
+                    <i class="bi bi-person-workspace bg-[#0056F0] text-white rounded-md py-2 px-3 text-2xl shadow-xl"></i>
+                    <p class="leading-10 pt-2 font-semibold">Lorem ipsum dolor sit amet</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint ipsum qui eligendi id! Maiores, iste! Doloribus numquam quasi ab.</p>
+                </div>
+
+                <div id="opt4" class="lg:w-[500px]">
+                    <i class="bi bi-calendar3 bg-[#0056F0] text-white rounded-md py-2 px-3 text-2xl shadow-xl"></i>
+                    <p class="leading-10 pt-2 font-semibold">Lorem ipsum dolor sit amet</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint ipsum qui eligendi id! Maiores, iste! Doloribus numquam quasi ab.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#001E39] grid lg:grid-cols-2 pt-52 pb-20">
+        <div id="p-sec3" class="flex flex-col items-center">
+            <p class="text-4xl lg:text-6xl lg:text- font-semibold text-white">Vamos <br> <span class="text-[#0056F0]">Conversar?</span></p>
+            <p class="text-gray-200 pt-5 text-xl lg:translate-x-[-20px]">Atendemos em todo o Brasil</p>
+        </div>
+        <div>
+            <div id="formu" class="flex flex-col pt-16 lg:pt-0 lg:translate-x-[-40px]">
+                <form action="">
+                        <div class="flex flex-col items-center lg:items-start lg:flex-row lg:space-x-7 lg:translate-x-[-20px] xl:translate-x-0">
+                            <div class="flex flex-col space-y-10 lg:space-y-12 w-[90%] lg:w-[100%]">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*nome completo:">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*seu site:">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*tamanho da empresa:">
+                            </div>
+                            <div class="flex flex-col space-y-10 lg:space-y-12 pt-10 lg:pt-0 w-[90%] lg:w-[100%]">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*email-corporativo:">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*telefone:">
+                                <input class="bg-transparent border-b text-xl outline-none text-white" type="text" required placeholder="*cargo:">
+                            </div>
+                        </div>
+                        <div class="flex justify-center lg:justify-start"><input class="bg-transparent border-b text-xl outline-none text-white pt-12 w-[90%] lg:w-[100%]" type="text" required placeholder="*mensagem:"></div>
+
+                        <div class="flex justify-center lg:justify-end items-center pt-7 text-sm space-x-4">
+                            <span class="text-gray-200">Desejo receber comunicações futuras em meu email</span>
+                            <input class="border-none outline-none w-5 h-5" type="checkbox">
+                        </div>
+                        <div class="flex justify-end items-center pt-5 space-x-3 translate-x-[-20px] lg:translate-x-0">
+                            <input id="enviar" class="text-2xl text-gray-200 font-semibold bar cursor-pointer transition ease-in-out duration-700 hover:translate-x-[-20px]" type="submit" value="enviar">
+                            <i id="seta" class="bi bi-arrow-right text-2xl text-gray-200 pt-1"></i>
+                        </div>
+                        <style>
+                            @keyframes seta-animation {
+                                0%{
+                                    transform: translateX(10px);
+                                }
+
+                                50%{
+                                    transform: translateX(0px);
+                                }
+
+                                100%{
+                                    transform: translateX(10px);
+                                }
+                            }
+
+                            #seta{
+                                animation: seta-animation 1.1s ease-in-out infinite;
+                            }
+                        </style>
+                        
+                </form>
+                
+                <style>
+                    .bar::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background-color: #0056F0;
+                        transition: width 0.6s;
+                    }
+
+                    .bar:hover::after{
+                        width: 100%;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <div class="pt-20 pb-16">
+        <p id="p-vantagens" class="text-center font-semibold text-2xl md:text-4xl text-[#002852]">Nossas Vantagens</p>
+
+        <div id="vantagens" class="grid lg:grid-cols-3">
+            <div class="flex justify-center pt-16 ">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] h-[185px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-credit-card-2-front text-6xl"></i>
+                    <p class="text-xl font-semibold">Criação de Landing Pages</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-16">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-window-sidebar text-6xl"></i>
+                    <p class="text-xl font-semibold">Criação de Websites</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-16">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-menu-button-wide text-6xl"></i>
+                    <p class="text-xl font-semibold">Google Ads</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center pt-16">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-megaphone text-6xl"></i>
+                    <p class="text-xl font-semibold">Facebook Ads</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-16">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-gear text-6xl"></i>
+                    <p class="text-xl font-semibold">Otimização de SEO</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-16">
+                <div class="space-y-2 flex flex-col items-start w-[350px] sm:w-[400px] shadow-2xl p-5 rounded-lg cursor-pointer items hover:text-white transition ease-in-out duration-500">
+                    <i class="bi bi-person-plus text-6xl"></i>
+                    <p class="text-xl font-semibold">Geração de Leads</p>
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+
+            <style>
+                .items {
+                position: relative; /* Necessário para posicionamento correto do ::before */
+                display: inline-block; /* Ajusta ao conteúdo */
+                overflow: hidden; /* Garante que o efeito não ultrapasse os limites */
+                padding: 10px 20px; /* Adiciona um espaço interno */
+                text-decoration: none; /* Remove sublinhado se for um link */
+            }
+
+            .items::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 100%;
+                background-color: #2374FF;
+                transition: width 0.9s ease-in-out;
+                z-index: -1; /* Mantém o fundo atrás do texto */
+            }
+
+            .items:hover::before {
+                width: 100%;
+            }
+
+            </style>
+        </div>
+    </div>
+    <div class="bg-white pt-20 pb-20">
+        <p id="p-sucesso" class="text-center font-semibold text-2xl md:text-4xl text-[#002852] px-4 lg:px-0">Marcas que Têm Sucesso com a Exercise</p>
+        <div class="flex flex-col lg:flex-row pt-10 mx-10">
+            <div class="flex justify-center lg:justify-start">
+                <img id="img-pessoa" class="rounded-lg object-cover w-[600px] h-[300px]" src="assets/pessoas-trabalhando/img1.avif" alt="">
+            </div>
+            <div id="inf-sec-sucesso" class="lg:mx-5">
+                <img id="img-marca" class="w-32 translate-x-[-17px]" src="assets/publishiers/linkedin-removebg-preview.png" alt="">
+
+                <p class="text-xl font-semibold text-[#002852] lg:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis fugit, facilis recusandae.</p>
+
+                <p class="pt-5 text-sm sm:text-base">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus, nisi fugit obcaecati, vero inventore voluptate voluptates officiis perferendis aliquid ipsa earum ullam at eos laboriosam molestias porro quia deserunt."</p>
+            </div>
+        </div>
+        <div id="spans" class="flex justify-center space-x-3 pt-10">
+            <span id="spn1" class="w-4 h-4 lg:w-2 lg:h-2 block bg-[#1765f1] rounded-full cursor-pointer"></span>
+            <span id="spn2" class="w-4 h-4 lg:w-2 lg:h-2 block bg-[#8A98AB] rounded-full cursor-pointer"></span>
+            <span id="spn3" class="w-4 h-4 lg:w-2 lg:h-2 block bg-[#8A98AB] rounded-full cursor-pointer"></span>
+        </div>
+    </div>
+    <script>
+        let spn1 = window.document.getElementById('spn1')
+        let spn2 = window.document.getElementById('spn2')
+        let spn3 = window.document.getElementById('spn3')
+
+        let imgPerson = window.document.getElementById('img-pessoa')
+        let imgMarca = window.document.getElementById('img-marca')
+
+        spn1.onclick = () => {
+            imgPerson.src = 'assets/pessoas-trabalhando/img1.avif'
+            imgMarca.src = 'assets/publishiers/linkedin-removebg-preview.png'
+            imgMarca.style.translate = '0px'
+            spn1.style.background = '#1765f1'
+            spn2.style.background = '#8A98AB'
+            spn3.style.background = '#8A98AB'
+        }
+
+        spn2.onclick = () => {
+            imgPerson.src = 'assets/pessoas-trabalhando/img2.webp'
+            imgMarca.src = 'assets/publishiers/metropoles-removebg-preview.png' 
+            imgMarca.style.translate = '7px'
+            spn2.style.background = '#1765f1'
+            spn1.style.background = '#8A98AB'
+            spn3.style.background = '#8A98AB'
+        }
+
+        spn3.onclick = () => {
+            imgPerson.src = 'assets/pessoas-trabalhando/img3.jpg'
+            imgMarca.src = 'assets/pessoas-trabalhando/marca3.png' 
+            imgMarca.style.translate = '0px'
+            spn3.style.background = '#1765f1'
+            spn2.style.background = '#8A98AB'
+            spn1.style.background = '#8A98AB'
+        }
+
+    </script>
+
+    <div>
+       <div class="pt-20 pb-20">
+        <p id="p-funciona" class="text-center font-semibold text-2xl md:text-4xl text-[#002852]">Como isso Funciona?</p>
+
+        <div class="pt-12 flex flex-col lg:flex-row justify-center lg:space-x-6 mx-0 space-y-12 lg:space-y-0">
+            <div id="fc1" class="flex flex-col">
+                <img class="w-[400px] mx-auto px-5 lg:px-0 rounded-lg object-contain" src="assets/funciona/funciona1.jpg" alt="">
+
+                <div class="flex items-center mx-auto pt-7">
+                    <p class="pt-2 text-2xl font-semibold text-center ring-2 ring-[#0076F5] w-12 h-12 rounded-full text-[#0076F5]">1</p>
+                </div>
+
+                <div class="text-center pt-3">
+                    <p class="font-semibold text-xl">Lorem ipsum dolor</p>
+                    <p class="w-[350px] mx-auto pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus unde impedit illo, facilis adipisci ad at accusantium doloribus.</p>
+                </div>
+            </div>
+            <div id="fc2" class="flex flex-col">
+                <img class="w-[400px] mx-auto px-5 lg:px-0 rounded-lg object-contain" src="assets/funciona/funciona2.jpg" alt="">
+
+                <div class="flex items-center mx-auto pt-7">
+                    <p class="pt-2 text-2xl font-semibold text-center ring-2 ring-[#0076F5] w-12 h-12 rounded-full text-[#0076F5]">2</p>
+                </div>
+
+                <div class="text-center pt-3">
+                    <p class="font-semibold text-xl">Lorem ipsum dolor</p>
+                    <p class="w-[350px] mx-auto pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus unde impedit illo, facilis adipisci ad at accusantium doloribus.</p>
+                </div>
+            </div>
+            <div id="fc3" class="flex flex-col">
+                <img class="w-[400px] mx-auto px-5 lg:px-0 rounded-lg object-contain" src="assets/funciona/funciona3.webp" alt="">
+
+                <div class="flex items-center mx-auto pt-7">
+                    <p class="pt-2 text-2xl font-semibold text-center ring-2 ring-[#0076F5] w-12 h-12 rounded-full text-[#0076F5]">3</p>
+                </div>
+
+                <div class="text-center pt-3">
+                    <p class="font-semibold text-xl">Lorem ipsum dolor</p>
+                    <p class="w-[350px] mx-auto pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus unde impedit illo, facilis adipisci ad at accusantium doloribus.</p>
+                </div>
+            </div>
+        </div>
+       </div> 
+    </div>
+
+    <div class="bg-[#001E39] pt-20 pb-20 sec-clientes sec-clientes2 sec-clientes3">
+        <p id="p-clientes" class="text-center font-semibold text-2xl md:text-4xl text-white">Clientes <span class="text-[#0056F0]">Satisfeitos</span></p>
+
+            <div class="grid xl:grid-cols-3 mx-5 pt-5">
+                <div class="pb-16">
+                    <div id="cli1" class="bg-[#F0F6FE] lg:w-96 mx-auto flex flex-col items-center justify-center pt-8 rounded-lg mt-8 shadow-xl">
+                        <img class="w-32 h-32 rounded-full object-cover" src="assets/clientes/avali1.jpg" alt="">
+                        <ul class="flex text-[#EBBA0F] text-xl space-x-2 pt-5">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <p class="pt-3 font-semibold text-xl">Glauber Soares</p>
+                        <p class="w-[80%] pt-3">"Eu não poderia estar mais satisfeito com o serviço prestado! Desde o primeiro contato, fui atendido com muito profissionalismo e atenção aos detalhes. A equipe realmente entende de marketing digital e criou uma estratégia personalizada para o meu negócio, focando no que realmente importa: resultados. <br> <br>
+                        <span id="p-ocul1" class="hidden">
+                            Em pouco tempo, já percebi um aumento significativo no tráfego do meu site, nas interações das redes sociais e, principalmente, nas conversões. Além disso, sempre que precisei de suporte ou ajustes, fui atendido com rapidez e eficiência."
+                        </span></p>
+                        <p id="lerMais1" class="pb-3 pt-3 cursor-pointer">Ler Mais</p>
+                        <script>
+                            let lerMais1 = window.document.getElementById('lerMais1')
+                            lerMais1.onclick = () => {
+                                let pOcul1 = window.document.getElementById('p-ocul1')
+                                if(pOcul1.style.display === 'block') {
+                                    pOcul1.style.display = 'none'
+                                    lerMais1.innerHTML = 'Ler Mais'
+                                } else{
+                                    pOcul1.style.display = 'block'
+                                    lerMais1.innerHTML = 'Ler Menos'
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="cli2" class="bg-[#F0F6FE] lg:w-96 mx-auto flex flex-col items-center justify-center pt-8 rounded-lg mt-8 shadow-xl">
+                        <img class="w-32 h-32 rounded-full object-cover pt-2" src="assets/clientes/avali2.jpg" alt="">
+                        <ul class="flex text-[#EBBA0F] text-xl space-x-2 pt-5">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <p class="pt-3 font-semibold text-xl">Natasha Lemos</p>
+                        <p class="w-[80%] pt-3">"Eu não poderia estar mais feliz com o serviço oferecido! Desde o primeiro contato, fui atendida com total profissionalismo e atenção aos detalhes. A equipe realmente domina o marketing digital e desenvolveu uma estratégia sob medida para o meu negócio, focando no que realmente importa: resultados. <br> <br>
+                        <span id="p-ocul2" class="hidden">
+                            Em pouco tempo, já notei um crescimento expressivo no tráfego do meu site, no engajamento das redes sociais e, acima de tudo, nas conversões. Além disso, sempre que precisei de suporte ou ajustes, fui atendida com agilidade e eficiência."
+                        </span></p>
+                        <p id="lerMais2" class="pb-3 pt-3 cursor-pointer">Ler Mais</p>
+
+                        <script>
+                            let lerMais2 = window.document.getElementById('lerMais2')
+                            lerMais2.onclick = () => {
+                                let pOcul2 = window.document.getElementById('p-ocul2')
+                                if(pOcul2.style.display === 'block') {
+                                    pOcul2.style.display = 'none'
+                                    lerMais2.innerHTML = 'Ler Mais'
+                                } else{
+                                    pOcul2.style.display = 'block'
+                                    lerMais2.innerHTML = 'Ler Menos'
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="cli3" class="bg-[#F0F6FE] lg:w-96 mx-auto flex flex-col items-center justify-center pt-8 rounded-lg mt-8 shadow-xl">
+                        <img class="w-32 h-32 rounded-full object-cover" src="assets/clientes/avali3.jpg" alt="">
+                        <ul class="flex text-[#EBBA0F] text-xl space-x-2 pt-5">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <p class="pt-3 font-semibold text-xl">Adrew Silva</p>
+                        <p class="w-[80%] pt-3">"Não poderia estar mais satisfeito com o trabalho realizado! Desde o início, fui atendido com muita atenção e profissionalismo. A equipe realmente entende do assunto e criou uma estratégia personalizada para o meu negócio, sempre focando no que realmente importa: resultados. <br> <br>
+                        <span id="p-ocul3" class="hidden">
+                            Em pouco tempo, percebi um grande aumento no tráfego do meu site, nas interações nas redes sociais e, principalmente, nas conversões. Além disso, sempre que precisei de suporte ou ajustes, fui atendido de maneira rápida e eficiente.".
+                        </span></p>
+                        <p id="lerMais3" class="pb-3 pt-9 cursor-pointer ">Ler Mais</p>
+
+                        <script>
+                            let lerMais3 = window.document.getElementById('lerMais3')
+                            lerMais3.onclick = () => {
+                                let pOcul3 = window.document.getElementById('p-ocul3')
+                                if(pOcul3.style.display === 'block') {
+                                    pOcul3.style.display = 'none'
+                                    lerMais3.innerHTML = 'Ler Mais'
+                                } else{
+                                    pOcul3.style.display = 'block'
+                                    lerMais3.innerHTML = 'Ler Menos'
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="bg-[#FFFFFF] pt-20">
+        <p id="p-planos" class="text-center font-semibold text-2xl md:text-4xl text-[#002852]">Nosso Planos</p>
+
+        <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center pt-16 pb-20 lg:grid lg:grid-cols-2 xl:grid-cols-4 lg:mx-16 lg:gap-7 space-y-16 lg:space-y-0">
+
+            <div id="plano1" class="text-center text-3xl rounded-xl overflow-hidden group shadow-2xl w-[85%] lg:w-[100%] border-2 hover:scale-105 hover:translate-y-[-15px] transition ease-in-out duration-700">
+                <div class="planos bg-[#001E39]">
+                    <p class="font-semibold py-9 text-white">Pacote Inicial</p>
+                </div>
+                <p class="planos pt-12 font-semibold text-3xl text-[#001E39]">R$ 49,90<span class="text-lg">/mês</span></p>
+                <ul class="flex flex-col items-start justify-start pt-8 space-y-4 mx-4">
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+                </ul>
+                <div class="flex justify-center pt-10">
+                    <button class="flex items-center text-base bg-[#04274D] text-[#226DF1] py-3 px-4 rounded-lg space-x-2 hover:bg-[#226DF1] hover:text-white transition ease-in-out duration-300 mb-5">
+                        <p class="planos font-semibold">Compre Agora</p>
+                        <i class="bi bi-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="plano2" class="text-center text-3xl rounded-xl overflow-hidden group shadow-2xl w-[85%] lg:w-[100%] border-2 hover:scale-105 hover:translate-y-[-15px] transition ease-in-out duration-700">
+                <div class="planos bg-[#001E39]">
+                    <p class="font-semibold py-9 text-white">Pacote Básico</p>
+                </div>
+                <p class="planos pt-12 font-semibold text-3xl text-[#001E39]">R$ 99,90<span class="text-lg">/mês</span></p>
+                <ul class="flex flex-col items-start justify-start pt-8 space-y-4 mx-4">
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+                </ul>
+                <div class="flex justify-center pt-10">
+                    <button class="flex items-center text-base bg-[#04274D] text-[#226DF1] py-3 px-4 rounded-lg space-x-2 hover:bg-[#226DF1] hover:text-white transition ease-in-out duration-300 mb-5">
+                        <p class="planos font-semibold">Compre Agora</p>
+                        <i class="bi bi-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="plano3" class="text-center text-3xl rounded-xl overflow-hidden group shadow-2xl w-[85%] lg:w-[100%] border-2 hover:scale-105 hover:translate-y-[-15px] transition ease-in-out duration-700">
+                <div class="planos bg-[#001E39]">
+                    <p class="font-semibold py-9 text-white">Pacote Premium</p>
+                </div>
+                <p class="planos pt-12 font-semibold text-3xl text-[#001E39]">R$ 199,90<span class="text-lg">/mês</span></p>
+                <ul class="flex flex-col items-start justify-start pt-8 space-y-4 mx-4">
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+                </ul>
+                <div class="flex justify-center pt-10">
+                    <button class="flex items-center text-base bg-[#04274D] text-[#226DF1] py-3 px-4 rounded-lg space-x-2 hover:bg-[#226DF1] hover:text-white transition ease-in-out duration-300 mb-5">
+                        <p class="planos font-semibold">Compre Agora</p>
+                        <i class="bi bi-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="plano4" class="text-center text-3xl rounded-xl overflow-hidden group shadow-2xl w-[85%] lg:w-[100%] border-2 hover:scale-105 hover:translate-y-[-15px] transition ease-in-out duration-700">
+                <div class="planos bg-[#001E39]">
+                    <p class="font-semibold py-9 text-white">Pacote Exclusivo</p>
+                </div>
+                <p class="planos pt-12 font-semibold text-3xl text-[#001E39]">R$ 299,90<span class="text-lg">/mês</span></p>
+                <ul class="flex flex-col items-start justify-start pt-8 space-y-4 mx-4">
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-check2 text-[#1EF0C6] text-2xl "></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+
+                    <li class="flex items-center space-x-2">
+                        <i class="bi bi-x-lg text-[#F9175A] text-2xl"></i>
+                        <p class="text-sm font-semibold">Lorem ipsum dolor sit.</p>
+                    </li>
+                </ul>
+                <div class="flex justify-center pt-10">
+                    <button class="flex items-center text-base bg-[#04274D] text-[#226DF1] py-3 px-4 rounded-lg space-x-2 hover:bg-[#226DF1] hover:text-white transition ease-in-out duration-300 mb-5">
+                        <p class="planos font-semibold">Compre Agora</p>
+                        <i class="bi bi-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:grid lg:grid-cols-2 pt-20 pb-20 lg:pb-0">
+        <div class="flex justify-center">
+            <img id="img-hacker" class="pt-16" src="assets/hacker-removebg-preview.png" alt="">
+        </div>
+        <div class="flex flex-col items-center lg:items-start justify-start pt-16">
+            <p id="p-escolher" class="text-center font-semibold text-2xl md:text-4xl text-[#002852]">Por que nos escolher?</p>
+
+            <p id="p-inf-escolher" class="pt-14 w-[80%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet reprehenderit voluptatem delectus, maxime ea incidunt accusamus sint harum quos culpa? Cumque, quasi ex soluta error exercitationem aspernatur perferendis nobis ullam.</p>
+
+            <p class="pt-10">
+                <ul id="icons-escolher" class="grid grid-cols-2 sm:grid-cols-4 text-6xl sm:space-x-10 gap-10 sm:gap-0">
+                        <li class="flex flex-col text-center">
+                            <i class="bi bi-laptop text-[#226DF1]"></i>
+                            <p class="text-base pt-4">Digitalização</p>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <i class="bi bi-graph-up-arrow text-[#226DF1]"></i>
+                            <p class="text-base pt-4">Estatísticas</p>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <i class="bi bi-hdd-rack text-[#226DF1]"></i>
+                            <p class="text-base pt-4">Servidores</p>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <i class="bi bi-stars text-[#226DF1]"></i>
+                            <p class="text-base pt-4">Qualidade</p>
+                        </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="bg-[#001E39] p-12">
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-8">
+            <p id="p-perca-tempo" class="text-center font-semibold text-2xl md:text-3xl text-[#ffffff]">Conecte-se com o público certo sem gastar muito!</p>
+
+            <p id="p-apartir" class="text-[#9C14E8] planos font-semibold text-xl text-center pt-5 lg:pt-0">a partir de <span class="text-4xl">49,90</span>/mês</p>
+
+            <div id="criar-btn">
+                <button class="bg-[#0056F0] flex items-center gap-1 py-2 px-7 rounded-full text-xl text-white hover:bg-[#002852] transition ease-in-out duration-300 mt-12 lg:mt-0">
+                    Criar Conta
+                    <i id="seta" class="bi bi-arrow-right text-xl text-gray-200 pt-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer id="foot" class="bg-[#F0F6FE] p-12 flex flex-col items-center text-center justify-center space-y-5 text-[#212529]">
+        <div class="flex justify-center items-center">
+            <img class="w-20 h-20 object-cover" src="assets/cashew-logo-removebg-preview.png" alt="">
+            <p class="text-xl">Cashew - Digital Marketing</p>
+        </div>
+        <div>
+            <ul class="flex space-x-4">
+                <li class="border py-2 px-3 rounded-full border-[#9C14E8] shadow-xl cursor-pointer hover:translate-y-[-10px] transition ease-in-out duration-500"><i class="bi bi-facebook"></i></li>
+                <li class="border py-2 px-3 rounded-full border-[#9C14E8] shadow-xl cursor-pointer hover:translate-y-[-10px] transition ease-in-out duration-500"><i class="bi bi-twitter-x"></i></li>
+                <li class="border py-2 px-3 rounded-full border-[#9C14E8] shadow-xl cursor-pointer hover:translate-y-[-10px] transition ease-in-out duration-500"><i class="bi bi-linkedin"></i></li>
+                <li class="border py-2 px-3 rounded-full border-[#9C14E8] shadow-xl cursor-pointer hover:translate-y-[-10px] transition ease-in-out duration-500"><i class="bi bi-instagram"></i></li>
+                <li class="border py-2 px-3 rounded-full border-[#9C14E8] shadow-xl cursor-pointer hover:translate-y-[-10px] transition ease-in-out duration-500"><i class="bi bi-pinterest"></i></li>
+            </ul>
+        </div>
+        <div>
+            <p class="lg:w-[50%] mx-auto">Impulsionamos negócios no digital! Oferecemos estratégias personalizadas para atrair, engajar e converter clientes. Vamos transformar sua presença online?</p>
+        </div>
+        <div>
+            <p>&copy; 2025 Todos os Direitos Reservados Por Cashew - Digital Marketing</p>
+            <p class="pt-5">&copy; Desenvolvido por Kauan Cristian</p>
+        </div>
+    </footer>
+
+    <script src="scroll.js"></script>
+</body>
+</html>
