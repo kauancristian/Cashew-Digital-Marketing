@@ -38,4 +38,4 @@ How to Use 🚀:
 
 License 🔑: This project is licensed under the MIT License. Check the LICENSE file for more details.
 
-[Click here ->](https://ritmo-musics.netlify.app/](https://cashew-digitalmarketing.netlify.app/))
+[Click here ->](https://cashew-digitalmarketing.netlify.app/)
